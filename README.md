@@ -2,11 +2,11 @@
 
 > An implementation of a block chain in Go inspired by the naivechain npm package
 
-Note:
+### Note:
 
 _I am not a crypto expert (or a blockchain expert) so this could be a terrible implementation of a blockchain, or have bugs, so please be kind. I am also an amateur Go programmer, so if there is room to improve, please let me know._
 
-Usage:
+### Usage:
 
 To install go-naivechain:
 
@@ -14,7 +14,7 @@ To install go-naivechain:
 $ go get github.com/james2doyle/go-naivechain
 ```
 
-Example:
+### Example:
 
 ```go
 package main
