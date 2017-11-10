@@ -44,3 +44,7 @@ func main() {
   log.Printf("Chain is valid: %t", valid)
 }
 ```
+
+### Tests
+
+There are tests! The tests are written using [smartystreets/goconvey](https://github.com/smartystreets/goconvey). So you can either run the tests using `go test` or use the `goconvey` web UI to monitor the tests and run them.
