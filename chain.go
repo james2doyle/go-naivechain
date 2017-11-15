@@ -84,7 +84,7 @@ func (c Chain) CheckValidity() (bool, error) {
       return false, err
     }
     if !pass {
-      return false, fmt.Errorf("invalid block at %s with hash %s", b.Index, b.Hash)
+      return false, fmt.Errorf("invalid block at %d with hash %s", b.Index, b.Hash)
     }
   }
 

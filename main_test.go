@@ -92,7 +92,7 @@ func Test_A_Block_Can_Be_Added_To_A_Chain(t *testing.T) {
 
     previousHash := myChain.GetLatestBlock().Hash
 
-    newHash := fmt.Sprintf("%s%s%s%s", 1, previousHash, nextTimestamp, "new data here!")
+    newHash := fmt.Sprintf("%d%s%s%s", 1, previousHash, nextTimestamp, "new data here!")
 
     newBlock := Block{
       Index:        nextIndex,
@@ -132,7 +132,7 @@ func Test_An_Invalid_Block_Cannot_Be_Added_To_A_Chain(t *testing.T) {
 
     previousHash := myChain.GetLatestBlock().Hash
 
-    newHash := fmt.Sprintf("%s%s%s%s", 4, previousHash, nextTimestamp, "new data here!")
+    newHash := fmt.Sprintf("%d%s%s%s", 4, previousHash, nextTimestamp, "new data here!")
 
     newBlock := Block{
       Index:        nextIndex,

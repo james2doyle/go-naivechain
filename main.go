@@ -12,7 +12,7 @@ func NewChain() *Chain {
   now := time.Now()
   genesisData := "my genesis block!!"
 
-  newHashString := fmt.Sprintf("%s%s%s%s", 0, "0", now, genesisData)
+  newHashString := fmt.Sprintf("%d%s%s%s", 0, "0", now, genesisData)
 
   block := Block{
     Index:        0,

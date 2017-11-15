@@ -19,13 +19,13 @@ type (
 
 // GetHashableString function
 func (b Block) GetHashableString() string {
-  return fmt.Sprintf("%s%s%s%s", b.Index, b.PreviousHash, b.Timestamp, b.Data)
+  return fmt.Sprintf("%d%s%s%s", b.Index, b.PreviousHash, b.Timestamp, b.Data)
 }
 
 // CreateHash function
 func (b Block) CreateHash(index int, hash string, timestamp time.Time, data string) string {
   h := sha256.New()
-  hashable := fmt.Sprintf("%s%s%s%s", index, hash, timestamp, data)
+  hashable := fmt.Sprintf("%d%s%s%s", index, hash, timestamp, data)
   h.Write([]byte(hashable))
 
   return fmt.Sprintf("%x", h.Sum(nil))
